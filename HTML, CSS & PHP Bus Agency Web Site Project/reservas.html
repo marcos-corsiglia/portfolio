@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/0088b4e534.js" crossorigin="anonymous"></script>
+    <title>Index Page</title>
+</head>
+
+<body>
+    <div class="content">  <!-- La clase no existe en el css-->
+        <nav class="navbar">
+            <a style="padding: 1%;" href="index.html"><img src="img/Logo.png" alt="Logo Express Tours" width=auto height="50px"></a>
+            <ul>
+                <li><a class="navbar" href="reservas.html">Reservas</a></li>
+                <li><a class="navbar" href="sobre_nosotros.html">Sobre Nosotros</a></li>
+                <li><a class="navbar" href="preguntas_frecuentes.html">Preguntas Frecuentes</a></li>
+                <li><a class="navbar" href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <h1 class="titulo-seccion">RESERVAS</h1>
+        <h2 style="text-align: center;">Aquí podrá reservar su viaje</h2>
+
+        <form class="formulario-reserva" action="reservas.php" method="POST">
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+
+
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="lugar">Lugar de destino:</label>
+            <select id="lugar" name="lugar" required>
+                <option value="">Seleccione una opción</option>
+                <option value="Mendoza">Mendoza</option>
+                <option value="Salta">Salta</option>
+                <option value="Buenos Aires">Buenos Aires</option>
+                <option value="Córdoba">Córdoba</option>
+            </select>
+
+            <label for="fecha">Fecha de viaje:</label>
+            <input type="date" id="fecha" name="fecha" required>
+
+            <button class="button-form" type="submit" name="reservar">Reservar Ahora</button>
+        </form>
+
+
+        <footer class="footer">
+            <div class="footer__social-icons">
+                <a href="#">
+                    <div class="footer__social-icon"><i class="fa-brands fa-facebook"></i></div>
+                </a>
+                <a href="#">
+                    <div class="footer__social-icon"><i class="fa-brands fa-instagram"></i></div>
+                </a>
+                <a href="#">
+                    <div class="footer__social-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                </a>
+            </div>
+            <p class="footer__description">Venta de tickets de buses en todo el país.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
